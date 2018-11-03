@@ -7,6 +7,6 @@ app.all('*', (req, res) => {
   res.status(200).sendFile(__dirname + '/dist/m-events/index.html');
 });
 
-const port = process.env.PORT || 3080;
+const port = process.env.PORT || 80;
 
 app.listen(port,()=> console.log(`app listening to port ${port}`));
